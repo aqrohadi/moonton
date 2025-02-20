@@ -49,9 +49,9 @@ Route::prefix('prototype')->name('prototype.')->group(function () {
         return Inertia::render('Prototype/Register');
     })->name('register');
 
-    // route::get('/dashboard', function () {
-    //     return Inertia::render('Prototype/Dashboard');
-    // })->name('dashboard');
+    route::get('/dashboard', function () {
+        return Inertia::render('Prototype/Dashboard');
+    })->name('dashboard');
 
     // route::get('/subscriptionPlan', function () {
     //     return Inertia::render('Prototype/SubscriptionPlan');
